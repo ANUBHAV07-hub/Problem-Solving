@@ -1,0 +1,31 @@
+import java.util.*;
+class Digits
+{
+	private int a=0;
+	public int countDigits(int n)
+	{
+		int x=n;
+		if(x==0)
+			return 1;
+		while(x!=0)
+		{	
+		x=x/10;
+		a++;
+		}
+	  return a;
+	}
+}
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 Digits p = new Digits();
+    	 Scanner sc = new Scanner(System.in);
+    	 int y = sc.nextInt();
+    	 sc.close();
+    	 int f = p.countDigits(y);
+    	 
+    	 System.out.println("Digit Count of "+y+"= "+f);
+    	
+    	 
+     }
+}
