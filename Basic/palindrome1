@@ -1,1 +1,33 @@
-
+import java.util.*;
+class Palindrome
+{
+	private int a,rev=0;
+	public boolean checkPalindrome(int n)
+	{
+		int x=n;
+		while(x!=0)
+		{	
+		a = x%10;
+		rev = rev*10 + a;
+		x=(int)x/10;
+		}
+	  if(rev==n)
+		  return true;
+	  else
+		  return false;
+	}
+}
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 Palindrome p = new Palindrome();
+    	 Scanner sc = new Scanner(System.in);
+    	 int y = sc.nextInt();
+    	 sc.close();
+    	 boolean flag = p.checkPalindrome(y);
+    	 System.out.println("Palindrome check");
+    	 System.out.println(flag);
+    	
+    	 
+     }
+}
