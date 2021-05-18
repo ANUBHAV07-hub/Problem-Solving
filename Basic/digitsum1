@@ -1,0 +1,32 @@
+import java.util.*;
+class Sum
+{
+	private int a,rev=0;
+	public int digit_sum(int n)
+	{
+		int x=n;
+		if(x==0)
+			return 0;
+		while(x!=0)
+		{	
+		a = x%10;
+		rev = rev + a;
+		x = x/10;
+		}
+	  return rev;
+	}
+}
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 Sum p = new Sum();
+    	 Scanner sc = new Scanner(System.in);
+    	 int y = sc.nextInt();
+    	 sc.close();
+    	 int f = p.digit_sum(y);
+    	 
+    	 System.out.println("Sum of digits of  "+y+"= "+f);
+    	
+    	 
+     }
+}
