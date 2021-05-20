@@ -2,3 +2,6 @@
 2) count_digits1 ------A basic problem statement where we count number of digits in a number entered by user.
 3) reverse1 ------A basic problem statement where we reverse the number entered by the user and show it.
 4) digitsum1 ------A basic problem statement where we find the sum of all digits of a number entered by the user.
+5) factorial1 ------A basic problem statement where we calculate factorial of a number entered by user.
+6) hsdb
+7) factorial3 ------A basic problem statement where we calculate factorial of a number entered by user(for large values too).
