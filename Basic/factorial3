@@ -1,0 +1,40 @@
+import java.util.*;
+import java.math.*;
+class Factorial
+{
+	BigInteger bg = new BigInteger("1"); 
+	//BigInteger bg1 = new BigInteger("1");
+	
+	public BigInteger factorial(long s)
+	{
+		if(s==1||s==0)
+		{
+			return BigInteger.valueOf(1);
+		}
+		else
+		{
+		for(long i=2;i<=s;i++)
+		{
+		   bg = bg.multiply(BigInteger.valueOf(i));
+			
+		}
+		return bg;
+	
+		}
+	}
+}
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 Factorial f = new Factorial();
+    	 Scanner sc = new Scanner(System.in);
+    	 long y = sc.nextLong();
+    	 sc.close();
+    	 BigInteger a = new BigInteger("1");
+    	  a = f.factorial(y);
+    	 
+    	 System.out.println("Factorial of  "+y+"= "+a);
+    	
+    	 
+     }
+}
