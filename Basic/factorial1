@@ -1,0 +1,36 @@
+import java.util.*;
+import java.math.*;
+class Factorial
+{
+	private long x=1;
+	public long factorial(long s)
+	{
+		if(s==0||s==1)
+		{
+			return 1;
+		}
+		else
+		{
+			for(long i=2;i<=s;i++)
+			{
+				x=x*i;
+			}
+		return x;
+		}
+	}
+}
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 Factorial f = new Factorial();
+    	 Scanner sc = new Scanner(System.in);
+    	 long y = sc.nextLong();
+    	 sc.close();
+    	 
+    	 long a = f.factorial(y);
+    	 
+    	 System.out.println("Factorial of  "+y+"= "+a);
+    	
+    	 
+     }
+}
