@@ -1,0 +1,44 @@
+import java.util.*;
+//import java.math.*;
+class Gcd
+{
+     
+     public int gcd(int x, int y )
+     {
+    	 
+    	 if(x==y)
+    	 {
+    		 return x;
+    	 }
+    	 else 
+    	 {
+    	    
+    	    	if(y==0)
+    	    	{
+    	    		return x;
+    	    	}
+    	    	else
+    	    	{
+    	    	    return gcd(y,x%y);	
+    	    	}
+    	    }
+    	 
+    	 }
+     }
+
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 Gcd f = new Gcd();
+    	 Scanner sc = new Scanner(System.in);
+    	 int y = sc.nextInt();
+    	 int z = sc.nextInt();
+    	 sc.close();
+    	 
+    	 int a = f.gcd(y,z);
+    	 
+    	 System.out.println("GCD of  "+y+"and "+z+" = "+a);
+    	
+    	 
+     }
+}
