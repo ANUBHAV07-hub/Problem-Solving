@@ -1,0 +1,38 @@
+import java.util.*;
+//import java.math.*;
+class Factorial
+{
+     private long a=0;
+	public long countZeroFactorial(long s)
+	{
+		if(s<5 && s>=0)
+		{
+			return 0;
+		}
+		else
+		{
+		
+			for(int i=5;i<=s;i=i*5)
+			{
+				a+= s/i;
+			}
+		}	
+	return a;	
+	}
+	}
+
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 Factorial f = new Factorial();
+    	 Scanner sc = new Scanner(System.in);
+    	 long y = sc.nextLong();
+    	 sc.close();
+    	 
+    	 long a = f.countZeroFactorial(y);
+    	 
+    	 System.out.println("Trailing Zeroes in Factorial of  "+y+"= "+a);
+    	
+    	 
+     }
+}
