@@ -8,3 +8,4 @@
 8) TrailingZeroesFactorial1 ------An interesting problem statement where we need to find trailing zeroes in factorial of a number entered by user.
 9) Gcd1 -------A basic problem statement where we find gcd of two numbers entered by user(has larger time complexity than others).
 10) Gcd2 -------A basic problem statement where we find gcd of two numbers entered by user(using Euclid's Algo which takes less iterations).
+11) Gcd3 -------A basic problem statement where we find gcd of two numbers entered by user(using efficient Euclid's algo which takes even less iterations and time).
