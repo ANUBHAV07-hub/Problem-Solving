@@ -5,3 +5,4 @@
 5) factorial1 ------A basic problem statement where we calculate factorial of a number entered by user(iterative approach).
 6) factorial2 ------A basic problem statement where we calculate factorial of a number entered by user(using recursion).
 7) factorial3 ------A basic problem statement where we calculate factorial of a number entered by user(for large values too).
+8) TrailingZeroesFactorial1 ------An interesting problem statement where we need to find trailing zeroes in factorial of a number entered by user.
