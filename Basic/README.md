@@ -9,3 +9,4 @@
 9) Gcd1 -------A basic problem statement where we find gcd of two numbers entered by user(has larger time complexity than others).
 10) Gcd2 -------A basic problem statement where we find gcd of two numbers entered by user(using Euclid's Algo which takes less iterations).
 11) Gcd3 -------A basic problem statement where we find gcd of two numbers entered by user(using efficient Euclid's algo which takes even less iterations and time).
+12) Prime1 ------A basic problem statement where we find whether entered number by user is prime or not. 
