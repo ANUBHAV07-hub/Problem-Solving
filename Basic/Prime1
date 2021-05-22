@@ -9,9 +9,13 @@ class Prime
     	 {
     		 return false;
     	 }
+      else if(x==2||x==3)
+    	 {
+    		 return true;
+    	 }
     	 else
     	 {
-    	 for(int i=2;i<x;i++)
+    	 for(int i=2;i<=x/2;i++)
     	 {
     		 if(x%i==0)
     		 {
