@@ -1,0 +1,41 @@
+import java.util.*;
+//import java.math.*;
+class Prime
+{
+     
+     public boolean isPrime(int x)
+     {
+    	 if(x==1||x==0)
+    	 {
+    		 return false;
+    	 }
+    	 else
+    	 {
+    	 for(int i=2;i<x;i++)
+    	 {
+    		 if(x%i==0)
+    		 {
+    			 return false;
+    		 }
+    	 }
+    	 return true;
+    	 }
+    	 }
+     }
+
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 Prime p = new Prime();
+    	 Scanner sc = new Scanner(System.in);
+    	 int y = sc.nextInt();
+    	 sc.close();
+    	 
+    	 boolean a = p.isPrime(y);
+    	 if(a==true)		 
+    	 System.out.println(y+" Is Prime  ");
+    	 else
+    	 System.out.println(y+" Is Not Prime");
+    	 
+     }
+}
