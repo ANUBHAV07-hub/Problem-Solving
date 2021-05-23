@@ -1,0 +1,80 @@
+import java.util.*;
+//import java.math.*;
+class Prime
+{
+     
+     public boolean isPrime(int x)
+     {
+    	 if(x==1||x==0)
+    	 {
+    		 return false;
+    	 }
+    	 else if(x==2||x==3)
+    	 {
+    		 return true;
+    	 }
+    	 else if(x%2==0||x%3==0)
+    	 {
+    		 return false;
+    	 }
+    	 else
+    	 {
+    	 for(int i=5;i*i<=x;i+=6)
+    	 {
+    		 if(x%i==0)
+    		 {
+    			 return false;
+    		 }
+    		 if(x%(i+2)==0)
+    		 {
+    			 return false;
+    		 }
+    	 }
+    	 return true;
+    	 }
+    	 }
+     }
+class PrimeFactor extends Prime
+{
+	public void primeFactors(int a )
+	{
+		if(a==1||a==0)
+		{
+			System.out.println("No prime factors");
+		}
+		else if(isPrime(a))
+		{
+			System.out.println("Prime factor is :"+a);
+		}
+		else
+		{
+			System.out.print("Prime Factors are : ");
+			for(int i=2;i<a;i++)
+			{
+				if(isPrime(i))
+				{
+					int x=i;
+					while(a%x==0)
+					{
+					System.out.print(i+", ");
+					x=x*i;
+					}
+				}
+			}
+		}
+	}
+}
+
+public class Main77 {
+     public static void main(String[] args)
+     {
+    	 PrimeFactor p = new PrimeFactor();
+    	 Scanner sc = new Scanner(System.in);
+    	 int y = sc.nextInt();
+    	 sc.close();
+    	 
+    	   p.primeFactors(y);
+    	
+    	 
+     }
+}
