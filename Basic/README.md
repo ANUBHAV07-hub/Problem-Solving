@@ -13,3 +13,4 @@
 13) Prime2 ------A basic problem statement where we find whether number entered is prime or not(more efficient code).
 14) primeFactors1 -----A basic problem statement where we find prime factors of a number entered by user.
 15) primeFactors1 -----A basic problem statement where we find prime factors of a number(more efficient i.e. takes less iterations and time).
+16) Divisors1 -------A basic problem statement where we find all divisors of a number entered by user but not in sorted manner.
