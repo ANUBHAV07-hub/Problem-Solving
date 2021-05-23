@@ -12,4 +12,4 @@
 12) Prime1 ------A basic problem statement where we find whether entered number by user is prime or not. 
 13) Prime2 ------A basic problem statement where we find whether number entered is prime or not(more efficient code).
 14) primeFactors1 -----A basic problem statement where we find prime factors of a number entered by user.
-15) primeFactors1 -----A basic problem statement where we find prime factors of a number entered by user(more efficient i.e. takes less iterations and time).
+15) primeFactors1 -----A basic problem statement where we find prime factors of a number(more efficient i.e. takes less iterations and time).
